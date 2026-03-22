@@ -2,9 +2,7 @@
 
 I'm a software engineer, mostly curious in cyber security.
 
-<a href="https://tryhackme.com/p/RennnSkywalker" target="_blank">
-  <img src="https://tryhackme-badges.vercel.app/api/user/stats/RennnSkywalker" alt="TryHackMe Stats">
-</a>
+![TryHackMe Stat Kartı](https://tryhackme-badges.vercel.app/api/user/badge/RennnSkywalker)
 
 ## Contact Me
 <p><a href="https://www.linkedin.com/in/eren-abdullah-beşik-064613232/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a> </p>
