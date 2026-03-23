@@ -4,22 +4,29 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-# BOTUN DEPOYA RESMİ KAYDEDEBİLMESİ İÇİN GEREKEN İZİN
+# Bota yazma izni veriyoruz
 permissions:
   contents: write
 
 jobs:
   tryhackme-badge-update:
-    name: Update this repo's tryhackme badge with the latest tryhackme image badge
     runs-on: ubuntu-latest
-    # GitHub'ın uyarısını çözmek için Node 24'ü zorunlu kılma
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      # güncel sürüm v4
+      # 1. Deponuzu Actions sunucusuna kopyalar
       - uses: actions/checkout@v4
-      - uses: p4p1/tryhackme-badge-workflow@main
+      
+      # 2. Assets klasörü yoksa oluşturur (varsa dokunmaz)
+      - name: Klasör Oluştur
+        run: mkdir -p assets
+        
+      # 3. TryHackMe'den güncel rozetinizi indirip klasöre kaydeder
+      # DİKKAT: TRYHACKME_KULLANICI_ADINIZ yazan yeri değiştirmeyi unutmayın!
+      - name: Rozeti İndir
+        run: curl -o assets/thm_propic.png https://tryhackme-badges.s3.amazonaws.com/RennnSkywalker.png
+        
+      # 4. Değişiklikleri deponuza (GitHub'a) yükler
+      - name: GitHub'a Kaydet ve Pushla
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          # BURAYI KENDİ TRYHACKME KULLANICI ADINIZLA DEĞİŞTİRMEYİ UNUTMAYIN
-          username: "RennnSkywalker"
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          commit_message: "Güncel TryHackMe rozeti eklendi 🚀"
+          file_pattern: 'assets/thm_propic.png'
