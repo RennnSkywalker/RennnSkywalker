@@ -2,7 +2,7 @@
 
 I'm a software engineer, mostly curious in cyber security.
 
-![tryhackme stats](https://raw.githubusercontent.com/RennnSkywalker/RennnSkywalker/master/assets/thm_propic.png)
+![tryhackme stats](https://raw.githubusercontent.com/RennnSkywalker/RennnSkywalker/main/assets/thm_propic.png)
 
 ![TryHackMe Stats](https://raw.githubusercontent.com/RennnSkywalker/RennnSkywalker/main/assets/thm_propic.png)
 
