@@ -4,22 +4,21 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-# Botun depona dosya (resim) yazabilmesi için zorunlu izin
 permissions:
   contents: write
 
 jobs:
   tryhackme-badge-update:
     runs-on: ubuntu-latest
-    # Node.js 20 uyarısını kalıcı olarak susturan komut
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
       
-      # Adamın kendi eklentisi
+      # Adamın kendi eklentisi ve API'yi kullanan gizli ayar
       - uses: p4p1/tryhackme-badge-workflow@main
         with:
           username: "RennnSkywalker"
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          # README'deki ayarı değiştirerek API kullanımını zorunlu kılıyoruz
           use_static_image: false
