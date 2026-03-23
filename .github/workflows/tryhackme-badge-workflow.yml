@@ -19,7 +19,6 @@ jobs:
       - name: Klasör Oluştur
         run: mkdir -p assets
         
-      # DİKKAT: TRYHACKME_KULLANICI_ADINIZ kısmını TryHackMe profilinizde yazan haliyle (büyük/küçük harf birebir aynı) yazın!
       - name: Rozeti İndir
         run: curl -L -o assets/thm_propic.svg "https://tryhackme-badges.vercel.app/api/user/badge/RennnSkywalker"
         
