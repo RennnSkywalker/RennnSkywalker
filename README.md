@@ -2,6 +2,8 @@
 
 I'm a software engineer, mostly curious in cyber security.
 
+![TryHackMe Stats](https://tryhackme-badges.vercel.app/api/user/badge/RennnSkywalker)
+
 ![tryhackme stats](https://raw.githubusercontent.com/RennnSkywalker/RennnSkywalker/main/assets/thm_propic.png)
 
 ## Contact Me
