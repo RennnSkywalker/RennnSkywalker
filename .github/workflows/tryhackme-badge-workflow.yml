@@ -4,26 +4,21 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
+# Botun depona dosya (resim) yazabilmesi için zorunlu izin
 permissions:
   contents: write
 
 jobs:
   tryhackme-badge-update:
     runs-on: ubuntu-latest
-    # Node.js uyarısını kaldırma
+    # Node.js 20 uyarısını kalıcı olarak susturan komut
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
       
-      - name: Klasör Oluştur
-        run: mkdir -p assets
-        
-      - name: Rozeti İndir
-        run: curl -L -o assets/thm_propic.svg "https://tryhackme-badges.vercel.app/api/user/badge/RennnSkywalker"
-        
-      - name: GitHub'a Kaydet ve Pushla
-        uses: stefanzweifel/git-auto-commit-action@v5
+      # Adamın kendi eklentisi
+      - uses: p4p1/tryhackme-badge-workflow@main
         with:
-          commit_message: "Güncel TryHackMe rozeti eklendi 🚀"
-          file_pattern: 'assets/thm_propic.svg'
+          username: "RennnSkywalker"
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
