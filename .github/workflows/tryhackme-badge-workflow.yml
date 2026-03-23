@@ -22,3 +22,4 @@ jobs:
         with:
           username: "RennnSkywalker"
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          use_static_image: false
