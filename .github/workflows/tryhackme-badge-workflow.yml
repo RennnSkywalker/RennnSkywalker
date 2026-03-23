@@ -1,19 +1,20 @@
-name: TryHackMe Badge Workflow
-
+name: TryHackMe Update Badge
 on:
   schedule:
-    # Make it run every 24 hour
     - cron: '0 0 * * *'
   workflow_dispatch:
 jobs:
   tryhackme-badge-update:
     name: Update this repo's tryhackme badge with the latest tryhackme image badge
     runs-on: ubuntu-latest
+    # GitHub'ın uyarısını çözmek için Node 24'ü zorunlu kılma
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      - uses: actions/checkout@v2
-      - uses: p4p1/tryhackme-badge-workflow@1.0.0
+      # güncel sürüm v4
+      - uses: actions/checkout@v4
+      - uses: p4p1/tryhackme-badge-workflow@main
         with:
-          # Replace with your tryhackme username
-          username: "<USERNAME>"
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} # Do not paste your github token here - this is a placeholder
-                                                  # and will pull your github token automatically
+          # BURAYI KENDİ TRYHACKME KULLANICI ADINIZLA DEĞİŞTİRMEYİ UNUTMAYIN
+          username: "RennnSkywalker"
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
