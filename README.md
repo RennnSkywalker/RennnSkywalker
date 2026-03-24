@@ -2,8 +2,8 @@
 
 I'm a software engineer, mostly curious in cyber security.
 
-<a href="https://tryhackme.com/p/RennnSkywalker">
-  <img src="https://RennnSkywalker.github.io/thm-badge/tryhackme_badge.png" alt="TryHackMe Badge" style="width: 50%;">
+<a href="https://tryhackme.com/p/RennnSkywalker" target="_blank">
+  <img src="https://raw.githubusercontent.com/RennnSkywalker/thm-live-badge/main/docs/tryhackme_badge.png" alt="TryHackMe Badge">
 </a>
 
 ## Contact Me
