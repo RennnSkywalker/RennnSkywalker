@@ -2,7 +2,7 @@
 
 I'm a software engineer, mostly curious in cyber security.
 
-<a href="https://tryhackme.com/p/<your-tryhackme-username>">
+<a href="https://tryhackme.com/p/RennnSkywalker">
   <img src="https://RennnSkywalker.github.io/thm-badge/tryhackme_badge.png" alt="TryHackMe Badge" style="width: 50%;">
 </a>
 
