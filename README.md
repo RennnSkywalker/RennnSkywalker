@@ -2,9 +2,17 @@
 
 I'm a software engineer, mostly curious in cyber security.
 
-<a href="https://tryhackme.com/p/RennnSkywalker" target="_blank">
-  <img src="https://raw.githubusercontent.com/RennnSkywalker/thm-live-badge/main/docs/tryhackme_badge.png" alt="TryHackMe Badge">
-</a>
+<div align="center">
+  <a href="https://tryhackme.com/p/RennnSkywalker">
+    <img src="https://img.shields.io/badge/TryHackMe-Level_7_|_Top_20%25-black?style=for-the-badge&logo=tryhackme&logoColor=white" alt="TryHackMe Level">
+  </a>
+  <a href="https://tryhackme.com/p/RennnSkywalker">
+    <img src="https://img.shields.io/badge/Points-3062_Pts-blue?style=for-the-badge" alt="TryHackMe Points">
+  </a>
+  <a href="https://tryhackme.com/p/RennnSkywalker">
+    <img src="https://img.shields.io/badge/Rooms_Completed-37-success?style=for-the-badge" alt="TryHackMe Rooms">
+  </a>
+</div>
 
 ## Contact Me
 <p><a href="https://www.linkedin.com/in/eren-abdullah-beşik-064613232/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a> </p>
